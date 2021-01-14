@@ -1,5 +1,7 @@
 # Vef2 2021, verkefni 1
 
+[Kynning í fyrirlestri](https://youtu.be/pCEHnurbuCU).
+
 Verkefnið er byggt á [hópverkefni 2 í vefforritun 1, árið 2020](https://github.com/vefforritun/vef1-2020-h2).
 
 Í grunninn skal smíða eins vef: lítinn myndbandavef sem nýtir gögn úr JSON skrá. Það sem er ólíkt er, er að vefurinn notar bakenda til að útbúa efni og senda með HTTP yfir í framenda. Þ.e.a.s. **engin JavaScript kóði er keyrður á framenda**, aðeins bakenda.
