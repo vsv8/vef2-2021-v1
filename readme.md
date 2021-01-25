@@ -6,6 +6,8 @@ Verkefnið er byggt á [hópverkefni 2 í vefforritun 1, árið 2020](https://gi
 
 Í grunninn skal smíða eins vef: lítinn myndbandavef sem nýtir gögn úr JSON skrá. Það sem er ólíkt er, er að vefurinn notar bakenda til að útbúa efni og senda með HTTP yfir í framenda. Þ.e.a.s. **engin JavaScript kóði er keyrður á framenda**, aðeins bakenda.
 
+Að sama skapi þarf ekki að útfæra neina sértæka framenda virkni fyrir vídeóspilar, það er nóg að nota `<video>`.
+
 Gögn skulu lesin úr `videos.json` skjali sem gefið er, og engar upplýsingar skulu „harðkóðaðar“ í HTML/EJS. Skrifa þarf Node.js forrit til að lesa gögnin, ekki skal nota fetch/Ajax til að sækja þau á framenda.
 
 ### Myndbandalisti
