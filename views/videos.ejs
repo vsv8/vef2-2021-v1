@@ -2,28 +2,24 @@
 
 
 <main>
-    <div class="list">
-      <div class="list__row">
-        <% categories.forEach((category) => { %>
-          <h2> <%= category.title %> </h2>
-          <div class="container">
-            <% for (let i = 0; i < category.videos.length; i++) { %> 
-                <a class="card" href="/video/<%= category.videos[i].id %>">
-                  <div class="poster">
-                    <img src=".<%= category.videos[i].poster %>">
-                    <div class="timestamp"> <%= formatVideoLength(category.videos[i].duration) %> </div>
-                  </div>
-                  <div class="title">
-                    <h4> <%= category.videos[i].title %> </h4>
-                    <p class="title-since"> <%= formatUploadDate(category.videos[i].created) %> </p>
-                  </div>
-                </a>
-            <% } %>
+  <% categories.forEach((category) => { %>
+    <h2> <%= category.title %> </h2>
+    <div class="container">
+      <% for (let i = 0; i < category.videos.length; i++) { %> 
+        <a class="card" href="/video/<%= category.videos[i].id %>">
+          <div class="poster">
+            <img src=".<%= category.videos[i].poster %>">
+            <div class="timestamp"> <%= formatVideoLength(category.videos[i].duration) %> </div>
           </div>
-          <hr>
-        <% }) %>
-      </div>
+          <div class="title">
+            <h4> <%= category.videos[i].title %> </h4>
+            <p class="title-since"> <%= formatUploadDate(category.videos[i].created) %> </p>
+          </div>
+        </a>
+      <% } %>
     </div>
+    <hr>
+  <% }) %>
   </main>
 
 <%- include('footer') -%>
