@@ -1,6 +1,6 @@
 import express from 'express';
 import { promises as fs} from 'fs';
-import { router } from './src/videos.js';
+import router from './src/videos.js';
 import formatUploadDate from './src/dateFormat.js';
 import formatVideoLength from './src/timeFormat.js';
 
@@ -20,7 +20,7 @@ function notFoundHandler(req, res, next) { // eslint-disable-line
     const title = 'Síða fannst ekki';
     const message = 'Ansans vesen, efnið finnst ekki!';
     res.status(404).render('error', { title, message });
-  }
+}
 
 function errorHandler(err, req, res, next) { // eslint-disable-line
     const title = 'Villa kom upp';
@@ -28,7 +28,7 @@ function errorHandler(err, req, res, next) { // eslint-disable-line
     res.status(500).render('error', { title, message });
 }
   
-app.use('/', router)
+app.use('/', router);
 app.use(notFoundHandler);
 app.use(errorHandler);
 
@@ -37,4 +37,4 @@ const port = '3000';
 
 app.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
-})
+});

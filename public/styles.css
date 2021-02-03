@@ -13,3 +13,8 @@ h1 {
   margin: auto;
   text-align: center;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+}
