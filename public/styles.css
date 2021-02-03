@@ -3,10 +3,25 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   max-width: 1400px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-body {
+@media(max-width: 1000px) {
+  .card {
+   padding-left: 20px;
+   padding-right: 20px;
+   width: 100%;
+  }
+}
+
+html {
   background-color: #e1e1e1;
+  font-size: 16px;
+}
+
+header {
+  padding-bottom: 400px;
 }
 
 h1 {
@@ -14,7 +29,85 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  padding-top: 10px;
+  margin: 0;
+}
+
+img {
+  max-width:100%;
+}
+
+video {
+  max-width: 100%;
+}
+
 footer {
   display: flex;
   justify-content: center;
+}
+
+.list {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.videopage {
+  margin-top: 40px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.videopage-text {
+  text-align: left;
+  margin: 0;
+}
+
+.card {
+  width: calc(33% - 1rem);
+  text-decoration: none; 
+}
+
+.poster {
+  display: flex;
+  position: relative;
+}
+
+.title {
+  text-decoration: none; 
+  color:black;
+  text-align: left;
+  margin-top: -40px;
+}
+
+.title-since {
+  margin: 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.timestamp {
+  background-color: #000a;
+  border-radius: 5px;
+  bottom: 0;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
 }

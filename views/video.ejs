@@ -1,12 +1,13 @@
 <%- include('header') -%>
 
-<video controls class="video_player">
-    <source src=".<%= video.video %>" type="video/mp4">
-</video>
-
-<p> <%= video.description %> </p>
-
-<a href="/">Til baka</a>
-
+<div class="videopage">
+    <video controls class="video_player">
+        <source src=".<%= video.video %>" type="video/mp4">
+    </video>
+    <div class="videopage-text">
+        <p> <%= video.description %> </p>
+        <a href="/">Til baka</a>
+    </div>
+</div>
 
 <%- include('footer') -%>

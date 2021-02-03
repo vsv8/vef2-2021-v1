@@ -1,6 +1,6 @@
 import express from 'express';
 import { promises as fs} from 'fs';
-import router from './src/videos.js';
+import { router } from './src/videos.js';
 import formatUploadDate from './src/dateFormat.js';
 import formatVideoLength from './src/timeFormat.js';
 
