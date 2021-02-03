@@ -1,0 +1,29 @@
+{
+  "name": "vef2-2021-v1",
+  "version": "1.0.0",
+  "description": "verkefni 1 í vefforritun 2",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vefforritun/vef2-2021-v1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vefforritun/vef2-2021-v1/issues"
+  },
+  "homepage": "https://github.com/vefforritun/vef2-2021-v1#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "nodemon": "^2.0.7",
+    "stylelint": "^13.9.0"
+  }
+}

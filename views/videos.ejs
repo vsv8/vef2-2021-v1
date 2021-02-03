@@ -1,0 +1,23 @@
+<%- include('header') -%>
+
+
+<main>
+    <div class="list">
+      <div class="list__row">
+        <% categories.forEach((category) => { %>
+          <div class="list__col">
+            <h2> <%= category.title %> </h2>
+            <% for (let i = 0; i < category.videos.length; i++) { %> 
+              <a href="/video/<%= category.videos[i].id %>">
+                <img src=".<%= category.videos[i].poster %>">
+              </a>
+              <p> <%= formatVideoLength(category.videos[i].duration) %> </p>
+              <p> <%= formatUploadDate(category.videos[i].created) %> </p>
+            <% } %>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </main>
+
+<%- include('footer') -%>

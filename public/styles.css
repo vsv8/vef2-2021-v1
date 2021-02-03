@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 1400px;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #e1e1e1;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+}
